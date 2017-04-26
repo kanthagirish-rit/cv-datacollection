@@ -1,0 +1,50 @@
+.title {
+    height: 100px; 
+    line-height: 100px; 
+    text-align: center; 
+    border: 1px solid black;
+}
+
+.titleContent {
+    display: inline-block;
+    vertical-align: middle; 
+    line-height: normal;
+    font-size: 38px;
+}
+
+.fields{
+    padding-top:50px;
+}
+
+.names{
+    padding-top: 20px;
+}
+
+.images{
+    display: table;
+    width: 70%;
+    padding-left: 15%;
+}
+
+.container{
+    width:200%;
+    display: none;
+}
+
+.buttons{
+    display: table-row;
+    width: 100%;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.cell{
+    display: table-cell;
+    width: 50%;
+}

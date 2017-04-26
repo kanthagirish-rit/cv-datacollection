@@ -1,0 +1,16 @@
+extends layout
+
+block content
+    script(src='/javascripts/script.js')
+    .images
+        input(type="hidden", name="userId", id="userId", value=data.id)
+        each image, i in data.list
+            div(id="image"+i, class="container")
+                img(id="img"+i, src=image)
+                input(type='hidden', name='response'+i, value='')
+        .buttons
+            .cell
+                button#like.right(type='button' onclick='saveLike()') Like
+            .cell
+                button#dislike.left(type='button' onclick='saveDislike()') Dislike
+
