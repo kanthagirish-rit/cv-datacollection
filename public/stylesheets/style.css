@@ -12,18 +12,37 @@
     font-size: 38px;
 }
 
+.bodyContent {
+    display: inline-block;
+    vertical-align: middle; 
+    line-height: normal;
+    font-size: 24px;
+}
+
 .fields{
     padding-top:50px;
 }
 
 .names{
     padding-top: 20px;
+    text-align:center;
+}
+
+.block{
+    padding-top: 20px;
+    width:100%;
+    height:auto;
+}
+
+.middle{
+    width:20%;
+    margin-left:40%;
 }
 
 .images{
     display: table;
-    width: 70%;
-    padding-left: 15%;
+    width: 60%;
+    padding-left: 20%;
 }
 
 .container{
