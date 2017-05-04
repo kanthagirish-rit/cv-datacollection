@@ -4,23 +4,25 @@ block content
     form(action='/images', method='POST')
         .fields
             .names
-                label.names Enter name:
-                input(type='text', name='userName', value='')
+                span.bodyContent Please make sure to take this survey all at once. Make sure not to take multiple surveys
                 br
             .names
-                span.titleContent Please choose from the following filters according to your preferences
-            .names
-                label Gender:
-                select(name='gender')
-                    option(value='male') Male
-                    option(value='female') Female
-            .names
-                label Ethnicity:
-                select(name='ethnicity')
-                    option(value='asian') Asian
-                    option(value='black') Black
-                    option(value='white') White
-                    option(value='hispanic') Hispanic
-            .names
-                input(type='submit', value='Proceed')
+                span.bodyContent Please choose from the following filters according to your preferences
+            .block
+                .middle
+                    label Gender:
+                    select(name='gender' multiple)
+                        option(value='male') Male
+                        option(value='female') Female
+            .block
+                .middle
+                    label Ethnicity:
+                    select(name='ethnicity' multiple)
+                        option(value='asian') Asian
+                        option(value='black') Black
+                        option(value='white') White
+                        option(value='latino') Latino
+            .block
+                .middle
+                    input(type='submit', value='Proceed')
 

@@ -6,11 +6,13 @@ block content
         input(type="hidden", name="userId", id="userId", value=data.id)
         each image, i in data.list
             div(id="image"+i, class="container")
-                img(id="img"+i, src=image)
+                img(id="img"+i, src=image, width="85%")
                 input(type='hidden', name='response'+i, value='')
         .buttons
             .cell
                 button#like.right(type='button' onclick='saveLike()') Like
             .cell
                 button#dislike.left(type='button' onclick='saveDislike()') Dislike
+    .names(style="display:none;")
+        span.bodyContent Thank you for taking your time and participating in this survey. We will you all the best for your finals!
 
